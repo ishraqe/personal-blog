@@ -1,0 +1,10 @@
+[
+  {
+    "home": {
+      "blog":
+        "sudo sass --watch src/styles/scss/BlogList/Blog.scss:src/styles/css/blog.css --style compressed",
+      "profileCard":
+        "sudo sass --watch src/styles/scss/BlogList/ProfileCard.scss:src/styles/css/ProfileCard.css --style compressed"
+    }
+  }
+]
