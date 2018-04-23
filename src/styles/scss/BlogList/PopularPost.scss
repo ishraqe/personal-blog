@@ -1,0 +1,64 @@
+$base-color: #1caf4d;
+$border-color: #d7dce5;
+$border-text-color: #8f939d;
+$font-color: #303338;
+
+#poplularsinglePost {
+  margin: 10px;
+  margin-left: 0;
+  height: 90px;
+
+  &:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  .postlist {
+    ul {
+      height: 100%;
+      width: 100%;
+      list-style-type: none;
+      padding: 0;
+      li {
+        .imageContainer {
+          img {
+            height: 90px;
+            width: 100%;
+            border-radius: 10px;
+          }
+        }
+        .infoContainer {
+          height: 100%;
+          width: 100%;
+          padding: 8px 8px 8px 2px;
+          h4 {
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 1.42857143;
+            color: rgb(48, 51, 56);
+            width: 100%;
+          }
+          span {
+            color: $border-text-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+#PopularTags {
+  margin: 30px 0;
+  h4 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: $font-color;
+  }
+  .tagButton {
+    border: 2px solid $border-color;
+    color: $border-text-color;
+    &:hover {
+      background-color: transparent;
+      border-color: $base-color;
+    }
+  }
+}

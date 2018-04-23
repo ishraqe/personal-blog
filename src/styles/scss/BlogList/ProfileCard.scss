@@ -11,7 +11,7 @@ $base-color: #1caf4d;
   align-items: center;
   border-radius: 5px;
   padding: 0 10px;
-  img {
+  .profileImage {
     height: 120px;
     width: 120px;
     border-radius: 60px;
@@ -30,7 +30,8 @@ $base-color: #1caf4d;
     padding-top: 20px;
     border-bottom: 1px solid #eeb;
     h3 {
-      color: #000;
+      color: #303338;
+      font-weight: 600;
     }
     h6 {
       color: gray;
@@ -48,8 +49,55 @@ $base-color: #1caf4d;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
     h4 {
       color: gray;
+    }
+    .userList {
+      li {
+        img {
+          height: 28px;
+          width: 28px;
+          border-radius: 14px;
+        }
+      }
+    }
+    .socialList {
+      li {
+        padding-right: 6px;
+        border-right: 1px solid gray;
+        &:last-child {
+          border-right: none;
+        }
+        .fa {
+          color: gray;
+        }
+        .fa-facebook {
+          &:hover {
+            color: #3b5998;
+          }
+        }
+        .fa-twitter {
+          &:hover {
+            color: #1da1f2;
+          }
+        }
+        .fa-medium {
+          &:hover {
+            color: #00ab6c;
+          }
+        }
+        .fa-linkedin {
+          &:hover {
+            color: #000000;
+          }
+        }
+        .fa-stack-overflow {
+          &:hover {
+            color: #f48024;
+          }
+        }
+      }
     }
   }
 }

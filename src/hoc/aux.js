@@ -6,7 +6,7 @@ const aux = props => {
   return (
     <div>
       <Nav />
-      <div>{props.children}</div>
+      <div style={{ marginTop: "60px" }}>{props.children}</div>
       <Footer />
     </div>
   );

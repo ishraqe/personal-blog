@@ -4,7 +4,13 @@
       "blog":
         "sudo sass --watch src/styles/scss/BlogList/Blog.scss:src/styles/css/blog.css --style compressed",
       "profileCard":
-        "sudo sass --watch src/styles/scss/BlogList/ProfileCard.scss:src/styles/css/ProfileCard.css --style compressed"
-    }
+        "sudo sass --watch src/styles/scss/BlogList/ProfileCard.scss:src/styles/css/ProfileCard.css --style compressed",
+      "filterComponent":
+        "sudo sass --watch src/styles/scss/BlogList/FilterComponent.scss:src/styles/css/FilterComponent.css --style compressed",
+      "PopularPost":
+        "sudo sass --watch src/styles/scss/BlogList/PopularPost.scss:src/styles/css/PopularPost.css --style compressed"
+    },
+    "footer":
+      "sudo sass --watch src/styles/scss/Footer.scss:src/styles/css/Footer.css --style compressed"
   }
 ]

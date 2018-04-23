@@ -1,17 +1,10 @@
 import React, { Component } from "react";
 import Blog from "./Blog";
 
-const blogs = [
-  { id: 1, name: "ish" },
-  { id: 1, name: "ish" },
-  { id: 1, name: "ish" },
-  { id: 1, name: "ish" }
-];
-
 export default class BlogList extends Component {
   render() {
-    return blogs.map(list => {
-      return <Blog />;
+    return this.props.blogs.map(list => {
+      return <Blog key={list.id} blog={list} {...this.props} />;
     });
   }
 }

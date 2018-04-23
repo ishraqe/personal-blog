@@ -1,4 +1,7 @@
 $base-color: #1caf4d;
+$border-color: #d7dce5;
+$border-text-color: #8f939d;
+$font-color: #303338;
 
 #blog {
   background-color: #fff;
@@ -18,7 +21,6 @@ $base-color: #1caf4d;
       height: 250px;
       min-height: 190px;
       max-height: 250px;
-      background-color: green;
       padding: 0;
       margin: 0;
       img {
@@ -66,17 +68,25 @@ $base-color: #1caf4d;
         margin-top: 30px;
         display: flex;
         flex-wrap: wrap;
-        .buttonContainer {
-          display: flex;
-
-          .finButton {
-            margin: 0 auto !important;
-            background-color: $base-color;
+      }
+      .buttonContainer {
+        display: flex;
+        justify-content: space-between;
+        .finButton {
+          background-color: $base-color;
+          border: 0;
+          align-self: flex-end;
+          &:hover {
+            box-shadow: 0 10px 16px $base-color;
             border: 0;
-            &:hover {
-              box-shadow: 0 10px 16px $base-color;
-              border: 0;
-            }
+          }
+        }
+        .tagButton {
+          border: 2px solid $border-color;
+          color: $border-text-color;
+          &:hover {
+            background-color: transparent;
+            border-color: $base-color;
           }
         }
       }

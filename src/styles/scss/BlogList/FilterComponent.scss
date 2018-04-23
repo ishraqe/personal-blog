@@ -1,0 +1,66 @@
+$base-color: #1caf4d;
+$border-color: #d7dce5;
+$border-text-color: #8f939d;
+$font-color: #303338;
+#FilterComponent {
+  margin-top: -10px;
+  .formContainer {
+    .search {
+      width: 100%;
+      height: 50px;
+      border-radius: 4px;
+      border: 2px solid #bfc3cd;
+      padding: 0 15px;
+      font-size: 16px;
+      margin-bottom: 35px;
+    }
+  }
+  .checkboxContainer {
+    .filterContainer {
+      margin-bottom: -12px;
+      padding: 0;
+      p {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        color: $font-color;
+      }
+    }
+    span {
+      color: #b6bbc6;
+      font-weight: 300;
+    }
+    ul {
+      padding-left: 20px;
+      margin: 30px 0;
+      li {
+        display: flex;
+        justify-content: space-between;
+        color: grey;
+        margin: 8px 0;
+        div {
+          label {
+            margin-left: 12px;
+            color: $font-color;
+            font-weight: normal;
+            margin-top: 3px;
+          }
+          input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            float: left;
+            border: 2px solid #b6bbc6;
+            border-radius: 4px;
+            margin-right: 6px;
+
+            -webkit-appearance: none;
+            &:checked {
+              background-color: $base-color;
+              border: 2px solid #1caf4d !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
