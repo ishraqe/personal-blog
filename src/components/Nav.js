@@ -1,10 +1,26 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import { changeNavColor } from "../store/actions";
+import "../styles/css/Nav.css";
 
 class Nav extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      navbarColor: ""
+    };
+  }
   render() {
     return (
-      <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <nav
+        className={
+          this.props.match.url === "/detail"
+            ? "navbar fixed-top navbar-expand-lg navbar-light myHeader"
+            : "navbar fixed-top navbar-expand-lg navbar-light bg-dark"
+        }
+        id="myHeader"
+      >
         <a className="navbar-brand">Navbar</a>
         <button
           className="navbar-toggler"
@@ -72,4 +88,16 @@ class Nav extends Component {
   }
 }
 
-export default Nav;
+const mapStateToProps = ({ auth }) => {
+  return {
+    auth
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    changeNavBack: () => dispatch(changeNavColor())
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Nav);

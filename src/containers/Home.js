@@ -16,7 +16,7 @@ export default class Home extends Component {
   render() {
     console.log(this.props);
     return (
-      <Aux>
+      <Aux {...this.props}>
         <section id="main" className="container">
           <div className="row">
             <div className="col-md-8 left-side">

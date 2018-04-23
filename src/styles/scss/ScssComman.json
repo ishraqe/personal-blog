@@ -10,7 +10,11 @@
       "PopularPost":
         "sudo sass --watch src/styles/scss/BlogList/PopularPost.scss:src/styles/css/PopularPost.css --style compressed"
     },
+    "Nav":
+      "sudo sass --watch src/styles/scss/Nav.scss:src/styles/css/Nav.css --style compressed",
     "footer":
-      "sudo sass --watch src/styles/scss/Footer.scss:src/styles/css/Footer.css --style compressed"
+      "sudo sass --watch src/styles/scss/Footer.scss:src/styles/css/Footer.css --style compressed",
+    "blogSingle":
+      "sudo sass --watch src/styles/scss/blogSingle.scss:src/styles/css/blogSingle.css --style compressed"
   }
 ]

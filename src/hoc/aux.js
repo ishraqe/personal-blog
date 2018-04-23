@@ -5,8 +5,16 @@ import Footer from "../components/Footer";
 const aux = props => {
   return (
     <div>
-      <Nav />
-      <div style={{ marginTop: "60px" }}>{props.children}</div>
+      <Nav {...props} />
+      <div
+        style={
+          props.match.url === "/detail"
+            ? { marginTop: "0px" }
+            : { marginTop: "60px" }
+        }
+      >
+        {props.children}
+      </div>
       <Footer />
     </div>
   );

@@ -1,0 +1,17 @@
+$base-color: #1caf4d;
+#myHeader {
+  .nav-link {
+    font-weight: 500;
+    margin: 0 5px;
+    border-bottom: 2px solid $base-color;
+    border-width: 50%;
+    color: #fff;
+  }
+}
+
+.myHeader {
+  background-color: transparent;
+  input {
+    background-color: transparent;
+  }
+}
