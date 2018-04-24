@@ -1,3 +1,7 @@
+$base-color: #1caf4d;
+$border-color: #d7dce5;
+$border-text-color: #8f939d;
+$font-color: #303338;
 #blogDetails {
   background-color: #fff;
   .blogHeaderImageContainer {
@@ -30,6 +34,188 @@
         margin-left: 10px;
         color: #fff;
         border-bottom: 1px solid #eee;
+      }
+    }
+  }
+  .blogDetails {
+    background-color: #fff;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    .container {
+      padding: 0 100px;
+      .socalTime {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .comment {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          i {
+            color: $base-color;
+            margin-right: 2px;
+          }
+          .timeContainer {
+            margin-right: 15px;
+            span {
+              color: gray;
+            }
+          }
+          .commentContainer {
+            span {
+              color: #fab793;
+            }
+          }
+        }
+        .socialShare {
+          i {
+            padding: 0 5px;
+            font-size: 20px;
+          }
+          .fa-facebook-square {
+            color: #3b5998;
+          }
+          .fa-twitter-square {
+            color: #37a8d8;
+          }
+          .fa-google-plus-square {
+            color: #cc0000;
+          }
+        }
+      }
+      .blogDescription {
+        margin-top: 40px;
+      }
+      .tagContainer {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0 5px;
+        .tagButton {
+          margin-top: 10px;
+          border: 2px solid $border-color;
+          color: $border-text-color;
+          &:hover {
+            background-color: transparent;
+            border-color: $base-color;
+          }
+        }
+      }
+    }
+  }
+}
+#blog-Comments {
+  background-color: #f5f5f5;
+  margin-bottom: 100px;
+  .container {
+    padding: 0 100px;
+    .commentwrapper {
+      margin-top: 50px;
+      .commentForm {
+        margin-bottom: 20px;
+        h2 {
+          margin: 10px 0;
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          textarea {
+            &:focus {
+              color: #495057;
+              background-color: #fff;
+              border-color: $base-color;
+              outline: 0;
+              -webkit-box-shadow: 0 0 0 0.2rem rgba(28, 175, 77, 0.25);
+              box-shadow: 0 0 0 0.2rem rgba(28, 175, 77, 0.25);
+            }
+          }
+          button {
+            margin: 20px 0;
+            background-color: #f76f00;
+            border: 0;
+            width: 150px;
+            color: #fff;
+            font-weight: 500;
+            -webkit-align-self: flex-end; /* Safari 7.0+ */
+            align-self: flex-end;
+          }
+        }
+      }
+      .commentList {
+        .list-group {
+          background-color: transparent;
+          .list-group-item {
+            margin: 10px 0;
+            background-color: transparent;
+            border: 0;
+            justify-content: center;
+            align-items: center;
+
+            .profileInfo {
+              img {
+                height: 100px;
+                width: 100px;
+                border-radius: 50px;
+              }
+              h6 {
+                margin-top: 4px;
+                color: $font-color;
+                font-size: 19px;
+                font-weight: 500;
+              }
+            }
+            .comment-info {
+              background-color: #fff;
+              border-radius: 5px;
+              display: flex;
+              justify-content: center;
+              align-items: flex-start;
+              flex-direction: column;
+              padding-left: 30px;
+              position: relative;
+
+              box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+              &::after,
+              &::before {
+                right: 100%;
+                top: 40%;
+                border: solid transparent;
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                pointer-events: none;
+              }
+              &::after {
+                border-color: rgba(136, 183, 213, 0);
+                border-right-color: #fff;
+                border-width: 13px;
+                margin-top: -13px;
+              }
+              &::before {
+                border-color: rgba(194, 225, 245, 0);
+                border-right-color: #fff;
+                border-width: 13px;
+                margin-top: -13px;
+              }
+              .timeDate {
+                margin-bottom: 10px;
+                i {
+                  color: $base-color;
+                  margin-right: 2px;
+                }
+                span {
+                  margin: 0 4px;
+                }
+              }
+              p {
+                color: $font-color;
+                font-size: 23px;
+              }
+            }
+          }
+        }
       }
     }
   }

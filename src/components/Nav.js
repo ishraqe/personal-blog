@@ -12,10 +12,11 @@ class Nav extends Component {
     };
   }
   render() {
+    console.log(this.props.isTop);
     return (
       <nav
         className={
-          this.props.match.url === "/detail"
+          this.props.isTop
             ? "navbar fixed-top navbar-expand-lg navbar-light myHeader"
             : "navbar fixed-top navbar-expand-lg navbar-light bg-dark"
         }
