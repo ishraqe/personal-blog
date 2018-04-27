@@ -16,5 +16,11 @@
       "sudo sass --watch src/styles/scss/Footer.scss:src/styles/css/Footer.css --style compressed",
     "blogSingle":
       "sudo sass --watch src/styles/scss/blogSingle.scss:src/styles/css/blogSingle.css --style compressed"
+  },
+  {
+    "admin": {
+      "auth":
+        "sudo sass --watch src/styles/scss/Admin/Auth.scss:src/styles/css/admin/auth.css --style compressed"
+    }
   }
 ]
