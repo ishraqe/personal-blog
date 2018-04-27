@@ -82,6 +82,141 @@ class Home extends Component {
           <div className="container">
             <div className="row">
               <div className="col-md-12">
+                <div className="similarPost">
+                  <h2>Similar Posts</h2>
+                  <ul className="list-group">
+                    <li className="list-group-item">
+                      <div className="popuplar-Post">
+                        <div className="info">
+                          <h2>16 app that will help you to travel</h2>
+                          <div className="userTime">
+                            <div>by John doe</div>
+                            <div className="timeDate">
+                              <i
+                                className="fa fa-calendar-o"
+                                aria-hidden="true"
+                              />{" "}
+                              <span>May 29,2016</span>
+                            </div>
+                            <div className="comment">
+                              <i
+                                className="fa fa-calendar-o"
+                                aria-hidden="true"
+                              />{" "}
+                              <span>13 comments</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="imageContainer">
+                          <img
+                            src="http://static.tvgcdn.net/mediabin/showcards/celebs/a-b/thumbs/bryce-dallas-howard-143048_828x1104.png"
+                            alt=""
+                            className="float-right"
+                          />
+                        </div>
+                      </div>
+                    </li>
+                    <li className="list-group-item">
+                      <div className="popuplar-Post">
+                        <div className="info">
+                          <h2>16 app that will help you to travel</h2>
+                          <div className="userTime">
+                            <div>by John doe</div>
+                            <div className="timeDate">
+                              <i
+                                className="fa fa-calendar-o"
+                                aria-hidden="true"
+                              />{" "}
+                              <span>May 29,2016</span>
+                            </div>
+                            <div className="comment">
+                              <i
+                                className="fa fa-calendar-o"
+                                aria-hidden="true"
+                              />{" "}
+                              <span>13 comments</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="imageContainer">
+                          <img
+                            src="http://static.tvgcdn.net/mediabin/showcards/celebs/a-b/thumbs/bryce-dallas-howard-143048_828x1104.png"
+                            alt=""
+                            className="float-right"
+                          />
+                        </div>
+                      </div>
+                    </li>
+                    <li className="list-group-item">
+                      <div className="popuplar-Post">
+                        <div className="info">
+                          <h2>16 app that will help you to travel</h2>
+                          <div className="userTime">
+                            <div>by John doe</div>
+                            <div className="timeDate">
+                              <i
+                                className="fa fa-calendar-o"
+                                aria-hidden="true"
+                              />{" "}
+                              <span>May 29,2016</span>
+                            </div>
+                            <div className="comment">
+                              <i
+                                className="fa fa-calendar-o"
+                                aria-hidden="true"
+                              />{" "}
+                              <span>13 comments</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="imageContainer">
+                          <img
+                            src="http://static.tvgcdn.net/mediabin/showcards/celebs/a-b/thumbs/bryce-dallas-howard-143048_828x1104.png"
+                            alt=""
+                            className="float-right"
+                          />
+                        </div>
+                      </div>
+                    </li>
+                    <li className="list-group-item">
+                      <div className="popuplar-Post">
+                        <div className="info">
+                          <h2>16 app that will help you to travel</h2>
+                          <div className="userTime">
+                            <div>by John doe</div>
+                            <div className="timeDate">
+                              <i
+                                className="fa fa-calendar-o"
+                                aria-hidden="true"
+                              />{" "}
+                              <span>May 29,2016</span>
+                            </div>
+                            <div className="comment">
+                              <i
+                                className="fa fa-calendar-o"
+                                aria-hidden="true"
+                              />{" "}
+                              <span>13 comments</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="imageContainer">
+                          <img
+                            src="http://static.tvgcdn.net/mediabin/showcards/celebs/a-b/thumbs/bryce-dallas-howard-143048_828x1104.png"
+                            alt=""
+                            className="float-right"
+                          />
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <button className="btn btn-outline-dark">
+                    <i class="fa fa-arrow-left" aria-hidden="true" />
+                    Back to blog
+                  </button>
+                </div>
+              </div>
+              <div className="col-md-12">
                 <div className="commentwrapper">
                   <div className="commentForm">
                     <h2>Comments</h2>
@@ -93,8 +228,8 @@ class Home extends Component {
                     </form>
                   </div>
                   <div className="commentList">
-                    <ul class="list-group">
-                      <li class="list-group-item">
+                    <ul class="list-group comment-group">
+                      <li class="list-group-item comment-group-item">
                         <div className="row">
                           <div className="col-md-2 profileInfo ">
                             <img
@@ -118,7 +253,7 @@ class Home extends Component {
                           </div>
                         </div>
                       </li>
-                      <li class="list-group-item">
+                      <li class="list-group-item comment-group-item">
                         <div className="row">
                           <div className="col-md-2 profileInfo ">
                             <img
@@ -142,7 +277,7 @@ class Home extends Component {
                           </div>
                         </div>
                       </li>
-                      <li class="list-group-item">
+                      <li class="list-group-item comment-group-item">
                         <div className="row">
                           <div className="col-md-2 profileInfo ">
                             <img
@@ -158,6 +293,30 @@ class Home extends Component {
                                 aria-hidden="true"
                               />{" "}
                               <span>May 29,2016</span> <span>8:01 pm</span>
+                            </div>
+                            <p>
+                              Is there any app that will help you pay for all
+                              the travel?
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item comment-group-item">
+                        <div className="row">
+                          <div className="col-md-2 profileInfo ">
+                            <img
+                              src="http://static.tvgcdn.net/mediabin/showcards/celebs/a-b/thumbs/bryce-dallas-howard-143048_828x1104.png"
+                              alt="profile"
+                            />
+                            <h6>Juliah Joeh</h6>
+                          </div>
+                          <div className="col-md-10 comment-info ">
+                            <div className="timeDate">
+                              <i
+                                className="fa fa-calendar-o"
+                                aria-hidden="true"
+                              />{" "}
+                              <span>May 21,2016</span> <span>8:01 pm</span>
                             </div>
                             <p>
                               Is there any app that will help you pay for all
