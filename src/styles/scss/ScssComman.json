@@ -1,26 +1,19 @@
 [
   {
     "home": {
-      "blog":
-        "sudo sass --watch src/styles/scss/BlogList/Blog.scss:src/styles/css/blog.css --style compressed",
-      "profileCard":
-        "sudo sass --watch src/styles/scss/BlogList/ProfileCard.scss:src/styles/css/ProfileCard.css --style compressed",
-      "filterComponent":
-        "sudo sass --watch src/styles/scss/BlogList/FilterComponent.scss:src/styles/css/FilterComponent.css --style compressed",
-      "PopularPost":
-        "sudo sass --watch src/styles/scss/BlogList/PopularPost.scss:src/styles/css/PopularPost.css --style compressed"
+      "blog": "sudo sass --watch src/styles/scss/BlogList/Blog.scss:src/styles/css/blog.css --style compressed",
+      "profileCard": "sudo sass --watch src/styles/scss/BlogList/ProfileCard.scss:src/styles/css/ProfileCard.css --style compressed",
+      "filterComponent": "sudo sass --watch src/styles/scss/BlogList/FilterComponent.scss:src/styles/css/FilterComponent.css --style compressed",
+      "PopularPost": "sudo sass --watch src/styles/scss/BlogList/PopularPost.scss:src/styles/css/PopularPost.css --style compressed"
     },
-    "Nav":
-      "sudo sass --watch src/styles/scss/Nav.scss:src/styles/css/Nav.css --style compressed",
-    "footer":
-      "sudo sass --watch src/styles/scss/Footer.scss:src/styles/css/Footer.css --style compressed",
-    "blogSingle":
-      "sudo sass --watch src/styles/scss/blogSingle.scss:src/styles/css/blogSingle.css --style compressed"
+    "Nav": "sudo sass --watch src/styles/scss/Nav.scss:src/styles/css/Nav.css --style compressed",
+    "footer": "sudo sass --watch src/styles/scss/Footer.scss:src/styles/css/Footer.css --style compressed",
+    "blogSingle": "sudo sass --watch src/styles/scss/blogSingle.scss:src/styles/css/blogSingle.css --style compressed"
   },
   {
     "admin": {
-      "auth":
-        "sudo sass --watch src/styles/scss/Admin/Auth.scss:src/styles/css/admin/auth.css --style compressed"
+      "auth": "sudo sass --watch src/styles/scss/Admin/Auth.scss:src/styles/css/admin/auth.css --style compressed",
+      "sidebar": "sudo sass --watch src/styles/scss/Admin/SideBar.scss:src/styles/css/admin/sidebar.css --style compressed"
     }
   }
 ]
